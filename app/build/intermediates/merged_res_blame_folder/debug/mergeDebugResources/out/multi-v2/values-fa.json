@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.layoutscompose.app-mergeDebugResources-41:/values-fa/values-fa.xml",
+            "outputFile": "com.example.layoutscompose.app-mergeDebugResources-42:/values-fa/values-fa.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\joao.braun\\.gradle\\caches\\9.0.0\\transforms\\cadb680968300a1e3ac8c7a967e649e1\\transformed\\jetified-ui-release\\res\\values-fa\\values-fa.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,192,271,365,463,549,631,734,819,902,969,1035,1116,1198,1272,1347,1414",
-                        "endColumns": "86,78,93,97,85,81,102,84,82,66,65,80,81,73,74,66,116",
-                        "endOffsets": "187,266,360,458,544,626,729,814,897,964,1030,1111,1193,1267,1342,1409,1526"
-                    },
-                    "to": {
-                        "startLines": "9,10,11,12,13,14,15,72,73,74,75,76,77,78,80,81,82",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "829,916,995,1089,1187,1273,1355,7496,7581,7664,7731,7797,7878,7960,8135,8210,8277",
-                        "endColumns": "86,78,93,97,85,81,102,84,82,66,65,80,81,73,74,66,116",
-                        "endOffsets": "911,990,1084,1182,1268,1350,1453,7576,7659,7726,7792,7873,7955,8029,8205,8272,8389"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\joao.braun\\.gradle\\caches\\9.0.0\\transforms\\11791725d8fc8919c033287cdeb02891\\transformed\\core-1.12.0\\res\\values-fa\\values-fa.xml",
+                    "source": "C:\\Users\\joao.braun\\.gradle\\caches\\9.0.0\\transforms\\47abfb3b301fe0843102e4dbd3e26bf9\\transformed\\core-1.13.0\\res\\values-fa\\values-fa.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -55,7 +38,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\joao.braun\\.gradle\\caches\\9.0.0\\transforms\\72cdd6eed4b20c9a9612b8a61753c6ee\\transformed\\jetified-foundation-release\\res\\values-fa\\values-fa.xml",
+                    "source": "C:\\Users\\joao.braun\\.gradle\\caches\\9.0.0\\transforms\\652898e1b69c4961ce1a0e71ac4e3644\\transformed\\jetified-ui-release\\res\\values-fa\\values-fa.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,192,271,365,463,549,631,734,819,902,969,1035,1116,1198,1272,1347,1414",
+                        "endColumns": "86,78,93,97,85,81,102,84,82,66,65,80,81,73,74,66,116",
+                        "endOffsets": "187,266,360,458,544,626,729,814,897,964,1030,1111,1193,1267,1342,1409,1526"
+                    },
+                    "to": {
+                        "startLines": "9,10,11,12,13,14,15,72,73,74,75,76,77,78,80,81,82",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "829,916,995,1089,1187,1273,1355,7496,7581,7664,7731,7797,7878,7960,8135,8210,8277",
+                        "endColumns": "86,78,93,97,85,81,102,84,82,66,65,80,81,73,74,66,116",
+                        "endOffsets": "911,990,1084,1182,1268,1350,1453,7576,7659,7726,7792,7873,7955,8029,8205,8272,8389"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\joao.braun\\.gradle\\caches\\9.0.0\\transforms\\9c082374a7b0dcb86db044e50e480fe2\\transformed\\jetified-foundation-release\\res\\values-fa\\values-fa.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

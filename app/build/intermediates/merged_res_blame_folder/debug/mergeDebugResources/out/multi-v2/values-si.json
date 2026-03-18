@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.layoutscompose.app-mergeDebugResources-41:/values-si/values-si.xml",
+            "outputFile": "com.example.layoutscompose.app-mergeDebugResources-42:/values-si/values-si.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\joao.braun\\.gradle\\caches\\9.0.0\\transforms\\cadb680968300a1e3ac8c7a967e649e1\\transformed\\jetified-ui-release\\res\\values-si\\values-si.xml",
+                    "source": "C:\\Users\\joao.braun\\.gradle\\caches\\9.0.0\\transforms\\9c082374a7b0dcb86db044e50e480fe2\\transformed\\jetified-foundation-release\\res\\values-si\\values-si.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,145",
+                        "endColumns": "89,92",
+                        "endOffsets": "140,233"
+                    },
+                    "to": {
+                        "startLines": "83,84",
+                        "startColumns": "4,4",
+                        "startOffsets": "8440,8530",
+                        "endColumns": "89,92",
+                        "endOffsets": "8525,8618"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\joao.braun\\.gradle\\caches\\9.0.0\\transforms\\652898e1b69c4961ce1a0e71ac4e3644\\transformed\\jetified-ui-release\\res\\values-si\\values-si.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\joao.braun\\.gradle\\caches\\9.0.0\\transforms\\11791725d8fc8919c033287cdeb02891\\transformed\\core-1.12.0\\res\\values-si\\values-si.xml",
+                    "source": "C:\\Users\\joao.braun\\.gradle\\caches\\9.0.0\\transforms\\47abfb3b301fe0843102e4dbd3e26bf9\\transformed\\core-1.13.0\\res\\values-si\\values-si.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -52,23 +69,6 @@
                         "startOffsets": "1465,1581,1698,1809,1926,2024,2121,2235,2364,2484,2623,2707,2813,2904,3001,3115,3243,3354,3482,3608,3740,3913,4037,4154,4274,4395,4487,4582,4701,4822,4923,5026,5130,5261,5397,5504,5601,5677,5773,5871,5957,6046,6140,6223,6306,6405,6505,6597,6698,6786,6897,6999,7111,7232,7314,7422",
                         "endColumns": "115,116,110,116,97,96,113,128,119,138,83,105,90,96,113,127,110,127,125,131,172,123,116,119,120,91,94,118,120,100,102,103,130,135,106,96,75,95,97,85,88,93,82,82,98,99,91,100,87,110,101,111,120,81,107,98",
                         "endOffsets": "1576,1693,1804,1921,2019,2116,2230,2359,2479,2618,2702,2808,2899,2996,3110,3238,3349,3477,3603,3735,3908,4032,4149,4269,4390,4482,4577,4696,4817,4918,5021,5125,5256,5392,5499,5596,5672,5768,5866,5952,6041,6135,6218,6301,6400,6500,6592,6693,6781,6892,6994,7106,7227,7309,7417,7516"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\joao.braun\\.gradle\\caches\\9.0.0\\transforms\\72cdd6eed4b20c9a9612b8a61753c6ee\\transformed\\jetified-foundation-release\\res\\values-si\\values-si.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,145",
-                        "endColumns": "89,92",
-                        "endOffsets": "140,233"
-                    },
-                    "to": {
-                        "startLines": "83,84",
-                        "startColumns": "4,4",
-                        "startOffsets": "8440,8530",
-                        "endColumns": "89,92",
-                        "endOffsets": "8525,8618"
                     }
                 }
             ]

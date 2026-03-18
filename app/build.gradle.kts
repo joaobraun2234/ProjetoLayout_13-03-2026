@@ -25,7 +25,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.8"
+        kotlinCompilerExtensionVersion = "1.5.10"
     }
 
     kotlinOptions {
@@ -34,10 +34,22 @@ android {
 }
 
 dependencies {
+
+    // ✅ BOM (controle de versões)
+    implementation(platform("androidx.compose:compose-bom:2024.02.01"))
+
+    // Core
     implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.activity:activity-compose:1.8.2")
-    implementation("androidx.compose.ui:ui:1.6.1")
-    implementation("androidx.compose.material3:material3:1.2.0")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.6.1")
-    debugImplementation("androidx.compose.ui:ui-tooling:1.6.1")
+
+    // Compose
+    implementation("androidx.activity:activity-compose:1.9.0")
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.ui:ui-tooling-preview")
+
+    // ✅ ViewModel (ESSENCIAL)
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+
+    // Debug
+    debugImplementation("androidx.compose.ui:ui-tooling")
 }

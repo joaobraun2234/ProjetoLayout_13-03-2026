@@ -3,10 +3,12 @@ package com.example.layoutscompose
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.runtime.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
-import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -21,7 +23,11 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            AppMenu()
+            MaterialTheme {
+                Surface(modifier = Modifier.fillMaxSize()) {
+                    AppMenu()
+                }
+            }
         }
     }
 }
@@ -85,7 +91,6 @@ fun AppMenu() {
                 Spacer(modifier = Modifier.height(16.dp))
 
                 MenuButton("Viagens") { screen = "travel" }
-
             }
         }
 
@@ -93,7 +98,7 @@ fun AppMenu() {
 
         "form" -> FormScreen { screen = "menu" }
 
-        "tasks" -> TaskScreen { screen = "menu" }
+        "tasks" -> TaskScreen(onBack = { screen = "menu" }) // ✅ CORRETO
 
         "movies" -> MovieScreen { screen = "menu" }
 
@@ -114,7 +119,6 @@ fun MenuButton(texto: String, onClick: () -> Unit) {
             .width(150.dp)
             .height(60.dp)
     ) {
-
         Text(texto)
     }
 }

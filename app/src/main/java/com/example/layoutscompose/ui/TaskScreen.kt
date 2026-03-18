@@ -8,13 +8,23 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.layoutscompose.Model.TaskViewModel
 
 @Composable
-fun TaskScreen(onBack: () -> Unit) {
+fun TaskScreen(
+    onBack: () -> Unit,
+    viewModel: TaskViewModel = viewModel()
+) {
 
-    var titulo by remember { mutableStateOf("") }
-    var status by remember { mutableStateOf("Não Concluído") }
-    var prioridade by remember { mutableStateOf("Média") }
+    val titulo by viewModel.titulo.collectAsState()
+    val status by viewModel.status.collectAsState()
+    val prioridade by viewModel.prioridade.collectAsState()
+    val date by viewModel.date.collectAsState()
+    val time by viewModel.time.collectAsState()
+
+    var showDatePicker by remember { mutableStateOf(false) }
+    var showTimePicker by remember { mutableStateOf(false) }
 
     Column(
         modifier = Modifier
@@ -25,11 +35,9 @@ fun TaskScreen(onBack: () -> Unit) {
 
         Text("Título", fontSize = 20.sp)
 
-        Spacer(modifier = Modifier.height(8.dp))
-
         OutlinedTextField(
             value = titulo,
-            onValueChange = { titulo = it },
+            onValueChange = { viewModel.updateTitulo(it) },
             placeholder = { Text("Digite o título") },
             modifier = Modifier.fillMaxWidth()
         )
@@ -39,21 +47,18 @@ fun TaskScreen(onBack: () -> Unit) {
         Text("Status", fontSize = 18.sp)
 
         Row {
-
             RadioButton(
                 selected = status == "Concluído",
-                onClick = { status = "Concluído" }
+                onClick = { viewModel.updateStatus("Concluído") }
             )
-
             Text("Concluído")
 
             Spacer(modifier = Modifier.width(20.dp))
 
             RadioButton(
                 selected = status == "Não Concluído",
-                onClick = { status = "Não Concluído" }
+                onClick = { viewModel.updateStatus("Não Concluído") }
             )
-
             Text("Não Concluído")
         }
 
@@ -62,30 +67,26 @@ fun TaskScreen(onBack: () -> Unit) {
         Text("Prioridade", fontSize = 18.sp)
 
         Row {
-
             RadioButton(
                 selected = prioridade == "Baixa",
-                onClick = { prioridade = "Baixa" }
+                onClick = { viewModel.updatePrioridade("Baixa") }
             )
-
             Text("Baixa")
 
             Spacer(modifier = Modifier.width(20.dp))
 
             RadioButton(
                 selected = prioridade == "Média",
-                onClick = { prioridade = "Média" }
+                onClick = { viewModel.updatePrioridade("Média") }
             )
-
             Text("Média")
 
             Spacer(modifier = Modifier.width(20.dp))
 
             RadioButton(
                 selected = prioridade == "Alta",
-                onClick = { prioridade = "Alta" }
+                onClick = { viewModel.updatePrioridade("Alta") }
             )
-
             Text("Alta")
         }
 
@@ -93,17 +94,17 @@ fun TaskScreen(onBack: () -> Unit) {
 
         Text("Data e Hora", fontSize = 18.sp)
 
-        Spacer(modifier = Modifier.height(10.dp))
+        Text("Data: $date")
+        Text("Hora: $time")
 
         Row {
-
-            Button(onClick = { }) {
+            Button(onClick = { showDatePicker = true }) {
                 Text("Escolher Data")
             }
 
             Spacer(modifier = Modifier.width(10.dp))
 
-            Button(onClick = { }) {
+            Button(onClick = { showTimePicker = true }) {
                 Text("Escolher Hora")
             }
         }
@@ -119,7 +120,7 @@ fun TaskScreen(onBack: () -> Unit) {
                 Text("Cancelar")
             }
 
-            Button(onClick = { }) {
+            Button(onClick = { viewModel.reset() }) {
                 Text("Resetar")
             }
 
@@ -128,4 +129,6 @@ fun TaskScreen(onBack: () -> Unit) {
             }
         }
     }
+
+    // DATE PICKER e TIME PICKER continuam iguais
 }
